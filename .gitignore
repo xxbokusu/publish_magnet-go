@@ -11,3 +11,5 @@ wasm_exec.js
 *.test
 *.out
 go.work
+
+resources/*
