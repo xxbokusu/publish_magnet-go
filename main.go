@@ -113,14 +113,14 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (screenWidth, screenHeigh
 
 func (g *Game) init() {
 	imageSourceMap := map[string]string{
-		"white_n":       "resources/images/go_white_n.png",
-		"black_n":       "resources/images/go_black_n.png",
-		"frame_white_n": "resources/images/go_frame_white_n.png",
-		"frame_black_n": "resources/images/go_frame_black_n.png",
-		"white_s":       "resources/images/go_white_s.png",
-		"black_s":       "resources/images/go_black_s.png",
-		"frame_white_s": "resources/images/go_frame_white_s.png",
-		"frame_black_s": "resources/images/go_frame_black_s.png",
+		"white_n":       "asset/images/go_white_n.png",
+		"black_n":       "asset/images/go_black_n.png",
+		"frame_white_n": "asset/images/go_frame_white_n.png",
+		"frame_black_n": "asset/images/go_frame_black_n.png",
+		"white_s":       "asset/images/go_white_s.png",
+		"black_s":       "asset/images/go_black_s.png",
+		"frame_white_s": "asset/images/go_frame_white_s.png",
+		"frame_black_s": "asset/images/go_frame_black_s.png",
 	}
 	for key, value := range imageSourceMap {
 		if err := loadImage(key, value); err != nil {
@@ -130,8 +130,8 @@ func (g *Game) init() {
 	}
 
 	audioSourceMap := map[string]string{
-		"set_stone":   "resources/se/set_stone.mp3",
-		"force_stone": "resources/se/force_stone.mp3",
+		"set_stone":   "asset/se/set_stone.mp3",
+		"force_stone": "asset/se/force_stone.mp3",
 	}
 	for key, value := range audioSourceMap {
 		if err := loadAudio(key, value); err != nil {
