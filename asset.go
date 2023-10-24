@@ -19,7 +19,7 @@ const (
 	sampleRate = 48000
 )
 
-//go:embed resources
+//go:embed asset
 var FS embed.FS
 
 var (
