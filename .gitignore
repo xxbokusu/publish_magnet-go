@@ -11,5 +11,3 @@ wasm_exec.js
 *.test
 *.out
 go.work
-
-asset/*
